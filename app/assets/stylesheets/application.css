@@ -27,10 +27,37 @@
 /*homes->top*/
 
 .top-content {
-  padding: 10px;
+  padding: 20px;
+}
+
+.top-content > p {
+  margin-bottom: 20px;
 }
 
 .top-content-link {
   color: black;
 }
 
+table {
+  width: 90%;
+}
+
+.table-title {
+  width: 20%;
+}
+
+.table-body {
+  width: calc(80% - 150px);
+}
+
+.table-show, .table-edit, table-destroy {
+  width: 50px;
+}
+
+.book-show-content {
+  padding: 10px 0 20px 10px;
+}
+
+.book-edit-title {
+  margin-bottom: 10px;
+}

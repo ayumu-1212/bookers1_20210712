@@ -1,11 +1,11 @@
 <h2>Books</h2>
 <table>
   <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th class="table-title">Title</th>
+    <th class="table-body">Body</th>
+    <th class="table-show"></th>
+    <th class="table-edit"></th>
+    <th class="table-destroy"></th>
   </tr>
   <% @books.each do |book| %>
     <tr>
@@ -33,9 +33,9 @@
 <% end %>
 
 <%= form_with model: @book, url: books_path, local:true do |f| %>
-  <h4>Title</h4>
+  <p>Title</p>
   <%= f.text_field :title %>
-  <h4>Body</h4>
-  <%= f.text_area :body %>
+  <p>Body</p>
+  <%= f.text_area :body %><br>
   <%= f.submit 'Create Book' %>
 <% end %>
